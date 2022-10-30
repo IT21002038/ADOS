@@ -117,7 +117,7 @@ public class SettingActivity extends AppCompatActivity {
 
 
 
-                                dbref= FirebaseDatabase.getInstance().getReference().child("users").child("0787969803");
+                                dbref= FirebaseDatabase.getInstance().getReference().child("users").child(Prevalent.currentonlineuser.getNumber());
                                 dbref.setValue(prof);
                                 clearcontrol();
 
