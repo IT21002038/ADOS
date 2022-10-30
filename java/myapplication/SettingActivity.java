@@ -102,11 +102,11 @@ public class SettingActivity extends AppCompatActivity {
         btnup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatabaseReference updRef = FirebaseDatabase.getInstance().getReference().child("users");
+                DatabaseReference updRef = FirebaseDatabase.getInstance().getReference().child("users").child(Prevalent.currentonlineuser.getNumber());
                 updRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.hasChild("0787969803")){
+                        if (dataSnapshot.hasChild(Prevalent.currentonlineuser.getNumber())){
                             try{
                                 prof.setName(nameedittxt.getText().toString().trim());
                                 prof.setEmail(emailedittxt.getText().toString().trim());
@@ -155,8 +155,8 @@ public class SettingActivity extends AppCompatActivity {
                 delRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if (dataSnapshot.hasChild("0787969803")) {
-                            dbref = FirebaseDatabase.getInstance().getReference().child("users").child("0787969803");
+                        if (dataSnapshot.hasChild(Prevalent.currentonlineuser.getNumber())) {
+                            dbref = FirebaseDatabase.getInstance().getReference().child().child(Prevalent.currentonlineuser.getNumber());
                             dbref.removeValue();
                             clearcontrol();
                             Toast.makeText(getApplicationContext(), "Deleted user", Toast.LENGTH_SHORT).show();
