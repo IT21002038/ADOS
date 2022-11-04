@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckpro"
+    tools:context=".Uprofile">
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="211dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="668dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/purple_700"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="141dp" />
+
+    <Button
+        android:id="@+id/uPro"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/styles"
+        android:backgroundTint="@color/purple_700"
+        android:text="User Profile"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/orderListBtn"
+        android:layout_width="137dp"
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="557dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/roundd"
+        android:backgroundTint="@color/purple_700"
+        android:text="Order List"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
